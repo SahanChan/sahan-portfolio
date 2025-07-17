@@ -58,12 +58,15 @@ const ShowcaseSection: React.FC<ShowcaseSectionProps> = ({isOne}) => {
 
 
                                         <video
-                                            src="/videos/secrets.mp4"
+                                            src="/videos/secrets.webm"
                                             autoPlay
                                             loop
                                             muted
                                             playsInline
-                                            style={{width: '100%', height: '100%'}}
+                                            style={{width: '100%', height: '100%',pointerEvents: 'none',  // disables any interaction like hover
+                                                userSelect: 'none',  }}
+                                            preload="auto"
+
                                         />
 
                                     )
@@ -73,12 +76,12 @@ const ShowcaseSection: React.FC<ShowcaseSectionProps> = ({isOne}) => {
 
                                 {isOne ? (
                                     <>
-                                        <h2>A complete travel guide for those planning trips in Sri Lanka ,
+                                        <h2>A complete travel guide app for those planning trips in Sri Lanka ,
                                             user-friendly
-                                            guide app
+                                            ,guide app
                                             called Lanka Journey.</h2>
                                         <p className="text-white-50 md:text-xl">
-                                            An app built with Flutter for both Android and iOS, offering a user-friendly
+                                            An android app built with React Native, offering a user-friendly
                                             experience
                                             and optimized performance, powered by a Supabase backend.
 
@@ -119,7 +122,7 @@ const ShowcaseSection: React.FC<ShowcaseSectionProps> = ({isOne}) => {
 
 
                                         <video
-                                            src="/videos/vodoo.mp4"
+                                            src="/videos/vodoo.webm"
                                             autoPlay
                                             loop
                                             muted
@@ -157,7 +160,7 @@ const ShowcaseSection: React.FC<ShowcaseSectionProps> = ({isOne}) => {
 
 
                                         <video
-                                            src="/videos/vodooBottls.mp4"
+                                            src="/videos/vodooBottls.webm"
                                             autoPlay
                                             loop
                                             muted

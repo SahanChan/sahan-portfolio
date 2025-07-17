@@ -1,3 +1,11 @@
+
+// import {NextLogoJs} from "@/components/HeroModels/NextLogoJs";
+// import {Flutter} from "@/components/HeroModels/Flutter";
+// import {Blender} from "@/components/HeroModels/Blender";
+// import {ReactLogo} from "@/components/HeroModels/ReactLogo";
+// import {Supabase} from "@/components/HeroModels/Supabase";
+// import {TreeJs} from "@/components/HeroModels/TreeJs";
+
 // Type definitions
 export interface NavLink {
   name: string;
@@ -33,6 +41,7 @@ export interface TechStackImg {
 
 export interface TechStackIcon {
   name: string;
+
   modelPath: string;
   scale: number;
   rotation: [number, number, number];
@@ -97,8 +106,11 @@ const words: Word[] = [
 ];
 
 const counterItems: CounterItem[] = [
-    {value: 2, suffix: "+", label: "Years of Experience"},
+    {value: 2, suffix: "+", label: "Years of Industry Experience"},
+
     {value: 15, suffix: "+", label: "Completed Projects"},
+    {value: 8, suffix: "+", label: "Coding Experience"},
+    {value: 6, suffix: "+", label: "Technologies Mastered"},
 ];
 
 const logoIconsList: LogoIcon[] = [
@@ -140,19 +152,24 @@ const logoIconsList: LogoIcon[] = [
 const abilities: Ability[] = [
     {
         imgPath: "/images/seo.png",
-        title: "Quality Focus",
-        desc: "Delivering high-quality results while maintaining attention to every detail.",
+        title: "Detail-Oriented",
+        desc: "I aim for great results by paying close attention to detail and focus craftsmanship on every task.",
     },
     {
-        imgPath: "/images/chat.png",
-        title: "Reliable Communication",
-        desc: "Keeping you updated at every step to ensure transparency and clarity.",
+        imgPath: "/images/adapt.png",
+        title: "Adaptability",
+        desc: "I adjust seamlessly to changing needs and challenges and tech stacks, ensuring solutions stay aligned with the goals.",
+    },
+    {
+        imgPath: "/images/technical.png",
+        title: "Technical Mastery",
+        desc: "Using strong technical skills to build reliable, fast, and ready-for-the-future solutions.",
     },
     {
         imgPath: "/images/time.png",
-        title: "On-Time Delivery",
-        desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
-    },
+        title: "Punctuality",
+        desc: "I always meet deadlines and finish each task on time without losing quality or attention to detail.",
+    }
 ];
 
 const techStackImgs: TechStackImg[] = [
@@ -180,25 +197,27 @@ const techStackImgs: TechStackImg[] = [
 
 const techStackIcons: TechStackIcon[] = [
     {
-        name: "Next JS ",
+        name: "Next JS",
+
         modelPath: "/models/nextjs-transformed.glb",
         scale: 23,
         rotation: [0, 0, 0],
     },
     {
-        name: "React",
+        name: "React JS",
+
         modelPath: "/models/react_logo-transformed.glb",
         scale: 1,
         rotation: [0, 0, 0],
     },
     {
-        name: "Python",
-        modelPath: "/models/python-transformed.glb",
-        scale: 0.8,
+        name: "Flutter Mobile",
+        modelPath: "/models/flutter-transformed.glb",
+        scale: 1,
         rotation: [0, 0, 0],
     },
     {
-        name: "Supabase Backend ",
+        name: "Supabase Backend",
         modelPath: "/models/supabase-transformed.glb",
         scale: 750,
         rotation: [0, 0, 0],
@@ -210,54 +229,56 @@ const techStackIcons: TechStackIcon[] = [
         rotation: [0, 0, 0],
     },
     {
-        name: "Project Manager",
-        modelPath: "/models/git-svg-transformed.glb",
-        scale: 0.05,
-        rotation: [0, -Math.PI / 4, 0],
+        name: "Blender 3D Multimedia",
+
+        modelPath: "/models/blender-transformed.glb",
+        scale: 1,
+        rotation: [0, 0, 0],
     },
 ];
 
-const expCards: ExpCard[] = [
+const expCards:ExpCard[]  = [
     {
         review:
-            "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-        imgPath: "/images/exp1.png",
-        logoPath: "/images/logo1.png",
-        title: "Frontend Developer",
-        date: "January 2023 - Present",
+            "As a 3D Animator, Mr. Sahan Chandrabahu has a solid understanding of 3D editing software, including industry standard tools such as Blender & Houdini. And he consistently demonstrates exceptional attention to detail in their work.",
+        imgPath: "/images/faith2hope.png",
+        logoPath: "/images/f2hLogo.png",
+        title: "3D Multimedia Specialist",
+        date: "July 2022 - August 2023 - Present(Working for Clients on Contract Basis)",
         responsibilities: [
-            "Developed and maintained user-facing features for the Hostinger website.",
-            "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-            "Optimized web applications for maximum speed and scalability.",
+            "Developed multiple stunning 3D Product Visuals for Clients and maintained consistency in style, motion, and design",
+            "Applied strong attention to detail to ensure high-quality and visually accurate animations",
+            "Collaborated with creative teams including video editors to bring concepts to life through engaging 3D content",
         ],
     },
     {
         review:
-            "Adrian's contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-        imgPath: "/images/exp2.png",
-        logoPath: "/images/logo2.png",
-        title: "Full Stack Developer",
-        date: "June 2020 - December 2023",
+            "During his time at Infortronix (Pvt.) Ltd Now known as Flexiata (Pvt) Ltd,  Sahan was actively involved in mobile application development using Flutter. He consistently demonstrated dedication, loyalty, punctuality, and a strong sense of responsibility in all his work.",
+        imgPath: "/images/infortronixLogo.png",
+        logoPath: "/images/infort.png",
+        title: "Flutter Mobile Developer",
+        date: "July 2022 - August 2023",
         responsibilities: [
-            "Led the development of Docker's web applications, focusing on scalability.",
-            "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-            "Contributed to open-source projects that were used with the Docker ecosystem.",
+            "Developed a complete mobile application for a property management client based in Australia",
+            "Utilized Flutter to build cross-platform apps with responsive UI and seamless performance with the backend",
+            "Collaborated with the backend team to integrate APIs into the mobile app.",
         ],
     },
     {
         review:
-            "Adrian's work on Appwrite's mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-        imgPath: "/images/exp3.png",
-        logoPath: "/images/logo3.png",
-        title: "React Native Developer",
-        date: "March 2019 - May 2020",
+            "Sahan worked as a volunteer Software Engineer during his studies to help our startup company develop its websites and mobile app for our clients. He was a great asset to us, known for his diligence, enthusiastic approach, and being a pleasure to work with. Highly recommend him",
+        imgPath: "/images/exzitanT.png",
+        logoPath: "/images/exzitan.png",
+        title: "Junior Software Engineer",
+        date: "October 2021 - July 2022",
         responsibilities: [
-            "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-            "Improved app performance and user experience through code optimization and testing.",
-            "Coordinated with the product team to implement features based on feedback.",
+            "Built cross-platform mobile apps using React Native & Flutter.",
+            "Built React and Next JS Saas Applications within a small timeframe",
+            "Showcased excellent execution of his skills in coding ",
         ],
     },
 ];
+
 
 const expLogos: ExpLogo[] = [
     {
@@ -274,71 +295,66 @@ const expLogos: ExpLogo[] = [
     },
 ];
 
-const testimonials: Testimonial[] = [
-    {
-        name: "Esther Howard",
-        mentions: "@estherhoward",
-        review:
-            "I can't say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
-        imgPath: "/images/client1.png",
-    },
-    {
-        name: "Wade Warren",
-        mentions: "@wadewarren",
-        review:
-            "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
-        imgPath: "/images/client3.png",
-    },
-    {
-        name: "Guy Hawkins",
-        mentions: "@guyhawkins",
-        review:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        imgPath: "/images/client2.png",
-    },
-    {
-        name: "Marvin McKinney",
-        mentions: "@marvinmckinney",
-        review:
-            "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that's both modern and easy to navigate. Fantastic work overall.",
-        imgPath: "/images/client5.png",
-    },
-    {
-        name: "Floyd Miles",
-        mentions: "@floydmiles",
-        review:
-            "Adrian's expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He's a true professional!",
-        imgPath: "/images/client4.png",
-    },
-    {
-        name: "Albert Flores",
-        mentions: "@albertflores",
-        review:
-            "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
-        imgPath: "/images/client6.png",
-    },
-];
+// const testimonials: Testimonial[] = [
+//     {
+//         name: "Esther Howard",
+//         mentions: "@estherhoward",
+//         review:
+//             "I can't say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+//         imgPath: "/images/client1.png",
+//     },
+//     {
+//         name: "Wade Warren",
+//         mentions: "@wadewarren",
+//         review:
+//             "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+//         imgPath: "/images/client3.png",
+//     },
+//     {
+//         name: "Guy Hawkins",
+//         mentions: "@guyhawkins",
+//         review:
+//             "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+//         imgPath: "/images/client2.png",
+//     },
+//     {
+//         name: "Marvin McKinney",
+//         mentions: "@marvinmckinney",
+//         review:
+//             "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that's both modern and easy to navigate. Fantastic work overall.",
+//         imgPath: "/images/client5.png",
+//     },
+//     {
+//         name: "Floyd Miles",
+//         mentions: "@floydmiles",
+//         review:
+//             "Adrian's expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He's a true professional!",
+//         imgPath: "/images/client4.png",
+//     },
+//     {
+//         name: "Albert Flores",
+//         mentions: "@albertflores",
+//         review:
+//             "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
+//         imgPath: "/images/client6.png",
+//     },
+// ];
 
 const socialImgs: SocialImg[] = [
     {
-        name: "insta",
-        url: "https://www.instagram.com/",
-        imgPath: "/images/insta.png",
-    },
-    {
-        name: "fb",
-        url: "https://www.facebook.com/",
-        imgPath: "/images/fb.png",
-    },
-    {
-        name: "x",
-        url: "https://www.x.com/",
-        imgPath: "/images/x.png",
+        name: "github",
+        url: "https://github.com/SahanChan",
+        imgPath: "/images/github.png",
     },
     {
         name: "linkedin",
-        url: "https://www.linkedin.com/",
+        url: "https://www.linkedin.com/in/sahanchan/",
         imgPath: "/images/linkedin.png",
+    },
+    {
+        name: "artstation",
+        url: "https://www.artstation.com/sahanbrucelee",
+        imgPath: "/images/artstation.png",
     },
 ];
 
@@ -349,7 +365,7 @@ export {
     counterItems,
     expCards,
     expLogos,
-    testimonials,
+    // testimonials,
     socialImgs,
     techStackIcons,
     techStackImgs,
